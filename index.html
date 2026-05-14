@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-logo">YN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-label reveal">Available for work</p>
+      <h1 class="hero-name reveal">
+        <span>Your</span>
+        <em>Name</em>
+      </h1>
+      <p class="hero-role reveal">Full-Stack Developer<br />&amp; Creative Technologist</p>
+      <a href="#work" class="hero-cta reveal">See my work ↓</a>
+    </div>
+    <div class="hero-meta reveal">
+      <span>Based in Kampala, UG</span>
+      <span class="sep">·</span>
+      <span id="localTime"></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-label reveal">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I build things for the web — from pixel-perfect interfaces to robust back-end systems. I care deeply about performance, accessibility, and the craft of writing clean code.</p>
+          <p>When I'm not coding, I'm exploring ideas at the intersection of technology and design.</p>
+        </div>
+        <div class="about-skills reveal">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>JavaScript / TypeScript</li>
+              <li>Python</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>React / Next.js</li>
+              <li>Node.js</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="work-inner">
+      <div class="work-label reveal">02 / Work</div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal" data-index="01">
+          <div class="project-thumb">
+            <div class="project-thumb-bg" style="--c1:#0f2027;--c2:#203a43;--c3:#2c5364;"></div>
+            <span class="project-num" aria-hidden="true">01</span>
+          </div>
+          <div class="project-info">
+            <h2>Project Alpha</h2>
+            <p>A full-stack web application with real-time collaboration features and a clean, intuitive interface.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>WebSockets</span>
+            </div>
+            <a href="#" class="project-link">View project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-index="02">
+          <div class="project-thumb">
+            <div class="project-thumb-bg" style="--c1:#1a1a2e;--c2:#16213e;--c3:#0f3460;"></div>
+            <span class="project-num" aria-hidden="true">02</span>
+          </div>
+          <div class="project-info">
+            <h2>Project Beta</h2>
+            <p>An e-commerce platform handling thousands of daily transactions with 99.9% uptime and sub-second load times.</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>PostgreSQL</span><span>Stripe</span>
+            </div>
+            <a href="#" class="project-link">View project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-index="03">
+          <div class="project-thumb">
+            <div class="project-thumb-bg" style="--c1:#0d0d0d;--c2:#1a0a2e;--c3:#2d0b52;"></div>
+            <span class="project-num" aria-hidden="true">03</span>
+          </div>
+          <div class="project-info">
+            <h2>Project Gamma</h2>
+            <p>A data visualization dashboard that turns complex datasets into clear, interactive charts and insights.</p>
+            <div class="project-tags">
+              <span>D3.js</span><span>Python</span><span>API</span>
+            </div>
+            <a href="#" class="project-link">View project →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-label reveal">03 / Contact</div>
+      <h2 class="contact-heading reveal">Let's build<br /><em>something great.</em></h2>
+      <a class="contact-email reveal" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <div class="contact-links reveal">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© <span id="year"></span> Your Name</span>
+    <span>Built with ♥ &amp; GitHub Pages</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
